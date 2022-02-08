@@ -18,6 +18,11 @@ const Timeline = () => {
     return <TimelineItem event={event} key={idx} />;
   });
 
+  const rotateArr = (arr) => {
+    arr.push(arr.shift());
+    return arr;
+  };
+
   useEffect(() => {
     setTimeout(() => {
       if (eventsArr.length !== 0) {
@@ -25,22 +30,17 @@ const Timeline = () => {
         setEvents((events) => [...events, temp]);
       } else {
         setEvents((events) => {
-          let lastEl = events[events.length - 1];
           let tempEventsArr = [...events];
-          tempEventsArr.unshift(lastEl);
-          tempEventsArr.pop();
-
-          return [...tempEventsArr];
+          const testArr = rotateArr(tempEventsArr);
+          return [...testArr];
         });
       }
-    }, 1000);
+    }, 2000);
   }, [events]);
 
   return (
     <div>
       <p>Timeline component</p>
-
-      {/* {eventItems} */}
       <p> events:{events}</p>
     </div>
   );
