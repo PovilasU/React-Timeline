@@ -1,10 +1,10 @@
 import React from 'react';
-const TimelineItem = ({ event: { time, title, description } }) => {
+const TimelineItem = ({ event }) => {
+  const { time, title, description } = event;
   return (
     <div>
-      <p>
-        time {time}, title {title}, description {description}
-      </p>
+      {time && <span> time:{time}</span>},{title && <span> title:{title}</span>}
+      ,{description && <span> description:{description}</span>}
     </div>
   );
 };
