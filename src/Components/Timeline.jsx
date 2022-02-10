@@ -26,12 +26,7 @@ const Timeline = () => {
     }, 5000);
   });
 
-  return (
-    <div>
-      <p>Timeline component</p>
-      <div> eventItems:{eventItems && eventItems}</div>
-    </div>
-  );
+  return <div className="timeline">{eventItems && eventItems}</div>;
 };
 
 export default Timeline;

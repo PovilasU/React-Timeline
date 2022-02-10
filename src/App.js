@@ -3,13 +3,10 @@ import Timeline from './Components/Timeline';
 
 function App() {
   return (
-    <div className="">
-      {/* dance moves for song:  "Mr C The Slide Man - Cha-Cha Slide"  
-        https://www.youtube.com/watch?v=wZv62ShoStY&ab_channel=MrCTheSlideManVEVO"
-       :)
-      */}
+    <>
+      <h1>Events timeline</h1>
       <Timeline />
-    </div>
+    </>
   );
 }
 

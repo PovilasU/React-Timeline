@@ -1,3 +1,10 @@
+{
+  /* dance moves for song:  "Mr C The Slide Man - Cha-Cha Slide"  
+        https://www.youtube.com/watch?v=wZv62ShoStY&ab_channel=MrCTheSlideManVEVO"
+       :)
+      */
+}
+
 const danceMoves = [
   'Right foot, lets stomp',
   'Left foot, lets stomp',

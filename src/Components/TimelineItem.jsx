@@ -2,9 +2,17 @@ import React from 'react';
 const TimelineItem = ({ event }) => {
   const { time, title, description } = event;
   return (
-    <div>
-      {time && <span> time:{time}</span>},{title && <span> title:{title}</span>}
-      ,{description && <span> description:{description}</span>}
+    <div className="timeline-item">
+      <div className="timeline-item-content">
+        {time && (
+          <div className="timeline-time-container">
+            <time>{time}</time>
+          </div>
+        )}
+        {title && <h5>{title}</h5>}
+        {description && <p>{description}</p>}
+        <span className="circle" />
+      </div>
     </div>
   );
 };
