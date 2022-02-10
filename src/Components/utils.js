@@ -5,14 +5,14 @@
       */
 }
 
-const danceMoves = [
-  'Right foot, lets stomp',
-  'Left foot, lets stomp',
-  'Turn to the right',
-  'Turn to the left',
-  'Criss cross',
-  'Clap your hands',
+const danceMovesOld = [
+  'Right foot, lets stomp.',
+  'Left foot, lets stomp.',
+  'Turn to the right.',
+  'Turn to the left.',
+  'Clap your hands.',
 ];
+
 const titles = [
   'Most immediate',
   'Yet Another',
