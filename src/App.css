@@ -19,7 +19,10 @@ body {
 h1 {
   text-align: center;
 }
-
+.link-container {
+  text-align: center;
+  margin: 20px;
+}
 .timeline {
   display: flex;
   flex-direction: column;
