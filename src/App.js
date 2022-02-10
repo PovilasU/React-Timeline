@@ -4,7 +4,7 @@ import Timeline from './Components/Timeline';
 function App() {
   return (
     <>
-      <div className="">
+      <div className="link-container">
         <a href="https://github.com/PovilasU/React-Timeline">
           Link to git repository
         </a>
