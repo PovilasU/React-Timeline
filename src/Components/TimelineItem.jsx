@@ -5,13 +5,17 @@ const TimelineItem = ({ event }) => {
     <div className="timeline-item">
       <div className="timeline-item-content">
         {time && (
-          <div className="timeline-time-container">
-            <time>{time}</time>
+          <div className="colum1">
+            <div className="timeline-time-container">
+              <time>{time}</time>
+            </div>
           </div>
         )}
-        {title && <h5>{title}</h5>}
-        {description && <p>{description}</p>}
-        <span className="circle" />
+        <div className="column2">
+          {title && <h5>{title}</h5>}
+          {description && <p>{description}</p>}
+          <span className="circle" />
+        </div>
       </div>
     </div>
   );
