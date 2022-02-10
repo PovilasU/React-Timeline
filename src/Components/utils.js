@@ -5,7 +5,7 @@
       */
 }
 
-const danceMovesOld = [
+const danceMoves = [
   'Right foot, lets stomp.',
   'Left foot, lets stomp.',
   'Turn to the right.',
