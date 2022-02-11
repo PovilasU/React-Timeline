@@ -10,6 +10,10 @@ function App() {
         </a>
       </div>
       <h1>Events timeline</h1>
+      <h3>
+        Every 5 seconds new event is added to the timeline and last 5th event is
+        removed
+      </h3>
       <Timeline />
     </>
   );
