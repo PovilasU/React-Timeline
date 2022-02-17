@@ -24,7 +24,7 @@ const titles = [
 const randomItem = (arr) => {
   return arr[Math.floor(Math.random() * arr.length)];
 };
-export const randomEvent = () => {
+export const randomEvent = (side) => {
   let today = new Date();
   let time =
     today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
@@ -33,6 +33,7 @@ export const randomEvent = () => {
     time: time,
     title: randomItem(titles),
     description: randomItem(danceMoves),
+    side,
   };
   randomEvent.time = time;
   return randomEvent;
